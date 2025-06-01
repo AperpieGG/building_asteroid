@@ -35,11 +35,9 @@ class Asteroid(CircleShape):
         # Create new asteroids with new direction and radius
         asteroid1 = Asteroid(self.position.x, self.position.y, new_radius)
         asteroid1.velocity = direction1
-        asteroid1.add(*self.containers)
 
         asteroid2 = Asteroid(self.position.x, self.position.y, new_radius)
         asteroid2.velocity = direction2
-        asteroid2.add(*self.containers)
 
         # Remove the original asteroid
         self.kill()
